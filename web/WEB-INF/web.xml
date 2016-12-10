@@ -8,6 +8,10 @@
         <servlet-name>Segundo</servlet-name>
         <servlet-class>Class1.servlets.MiSegundoServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Validacion</servlet-name>
+        <servlet-class>LoginMVC.serlvlets.Validacion</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>EjemploUsoServlet</servlet-name>
         <url-pattern>/EjemploUsoServlet</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>Segundo</servlet-name>
         <url-pattern>/SegundoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Validacion</servlet-name>
+        <url-pattern>/Autenticacion</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

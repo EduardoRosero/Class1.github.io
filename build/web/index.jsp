@@ -17,7 +17,7 @@
     <body>
         <h1>Login</h1>
         <div>
-            <form action="" method="post">
+            <form action="Autenticacion" method="post">
                 <p><input type="text" name="user" id="user"/></p>
                 <p><input type="password" name="pass" id="pass"/></p>
                 <p><input type="submit" name="Ingresar" id="Ingresar" value="Ingresar"/></p>
