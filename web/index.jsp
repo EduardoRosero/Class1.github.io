@@ -9,16 +9,20 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Class1</title>
+        <link rel="stylesheet" href="CSS/style.css"/>
+        <script src="JS/script.js"></script>
+        
+        <title>Mi Web Login MVC</title>
     </head>
     <body>
-        <h1>Bienvenidos a mi página</h1>
-        <%-- Esta es la utilizacion de scriplets --%>
-        <%-- Este es un comentario en un JSP --%>
-        <%int limite = 10;%>
-        <% for(int i=0;i<=limite;i++){%>
-        <p><%= i %></p>
-        <%}%>
-        
+        <h1>Login</h1>
+        <div>
+            <form action="" method="post">
+                <p><input type="text" name="user" id="user"/></p>
+                <p><input type="password" name="pass" id="pass"/></p>
+                <p><input type="submit" name="Ingresar" id="Ingresar" value="Ingresar"/></p>
+            </form>
+        </div>
+        <p><input type="button" value="Saluda" onclick="Saluda()"/></p>
     </body>
 </html>
