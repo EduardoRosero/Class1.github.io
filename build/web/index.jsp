@@ -9,9 +9,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Class1</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Bienvenidos a mi página</h1>
+        <%-- Esta es la utilizacion de scriplets --%>
+        <%-- Este es un comentario en un JSP --%>
+        <%int limite = 10;%>
+        <% for(int i=0;i<=limite;i++){%>
+        <p><%= i %></p>
+        <%}%>
+        
     </body>
 </html>
