@@ -32,7 +32,14 @@ public class Validacion extends HttpServlet {
         String user = request.getParameter("user");
         String pass = request.getParameter("pass");
         Consultas con = new Consultas();
-        System.out.println(con.Autenticacion(user, pass));
+        if (con.Autenticacion(user, pass)) 
+        {
+            response.sendRedirect("menu.jsp");
+        }
+        else
+        {
+            response.sendRedirect("index.jsp");
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
